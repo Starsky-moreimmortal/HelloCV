@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypelayout="1.0"?>
+<package format="3">
+  <name>hello_cv</name>
+  <version>0.0.1</version>
+  <description>HelloCV computer vision project with ROS 2 and OpenCV</description>
+  <maintainer email="starsky@example.com">Starsky</maintainer>
+  <license>MIT</license>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
