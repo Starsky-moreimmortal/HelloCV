@@ -37,5 +37,31 @@ install(TARGETS hello_cv_node
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME})
 
+# ========================================
+# 加密工具可执行文件（独立目标）
+# ========================================
+
+# 添加加密工具可执行文件
+add_executable(crypto_tool
+    src/crypto_main.cpp
+    src/Crypto.cpp
+    src/FileHandler.cpp
+    src/Menu.cpp
+)
+
+# 设置C++标准
+set_target_properties(crypto_tool PROPERTIES
+    CXX_STANDARD 11
+    CXX_STANDARD_REQUIRED ON
+)
+
+# 包含头文件目录
+target_include_directories(crypto_tool PRIVATE src)
+
+# 安装到lib目录
+install(TARGETS crypto_tool
+    DESTINATION lib/${PROJECT_NAME}
+)
+
 # 导出包
 ament_package()
