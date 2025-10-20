@@ -115,3 +115,113 @@ ros2 topic list
 **仓库**: https://github.com/Starsky-moreimmortal/HelloCV
 
 
+### 项目结构
+HelloCV/
+
+├── src/
+
+│   └── hello_cv_node.cpp  # ROS 2 图像处理节点
+
+├── launch/
+
+│   └── camera.launch.py   # 相机启动文件
+
+├── config/
+
+│   └── params.yaml        # 参数配置文件
+
+└── CMakeLists.txt         # ROS 2 构建配置
+
+---
+
+## 🔐 第二部分：文件加密工具
+
+### ✨ 功能亮点
+- **凯撒密码算法**：支持任意整数密钥的加密/解密
+- **文件操作**：完整的文件读写功能
+- **交互式界面**：用户友好的命令行菜单
+- **跨平台支持**：兼容 Windows/WSL 和 Linux 系统
+
+### 🛠️ 使用指南
+bash
+
+克隆项目
+git clone https://github.com/Starsky-moreimmortal/HelloCV.git
+
+编译项目
+cd ~/cv_ws
+
+colcon build
+运行加密工具
+./install/hello_cv/lib/hello_cv/crypto_tool
+
+#### 操作示例
+🔐 文本加密解密工具
+加密文本
+
+解密文本
+
+加密文件
+
+解密文件
+
+退出程序
+请选择操作 (1-5): 3
+
+📁 文件加密
+请输入要加密的文件路径: /mnt/c/Users/tysqw/Desktop/secret.txt
+
+请输入加密密钥 (整数): 7
+
+请输入输出文件路径: /mnt/c/Users/tysqw/Desktop/encrypted_secret.txt
+
+✅ 文件加密完成！
+
+### 📂 核心类说明
+| 类名 | 功能 |
+|------|------|
+| **Crypto** | 实现凯撒密码算法 |
+| **FileHandler** | 文件读写操作 |
+| **Menu** | 用户交互界面 |
+
+### 🌐 路径处理参考
+| 系统 | 桌面文件路径示例 |
+|------|------------------|
+| **WSL** | `/mnt/c/Users/用户名/Desktop/文件.txt` |
+| **原生 Linux** | `~/Desktop/文件.txt` |
+| **Windows CMD** | `C:\Users\用户名\Desktop\文件.txt` |
+
+---
+
+## 🏗️ 项目结构
+
+HelloCV/
+
+├── CMakeLists.txt          # 项目构建配置
+
+├── package.xml             # ROS 2 包配置
+
+├── README.md               # 项目文档
+
+├── src/
+
+│   ├── Crypto.h/cpp       # 加密算法
+
+│   ├── FileHandler.h/cpp   # 文件操作
+
+│   ├── Menu.h/cpp          # 用户界面
+
+│   └── crypto_main.cpp     # 程序入口
+
+└── test_files/             # 测试用例
+
+---
+
+## 📜 许可证
+本项目采用 MIT 许可证 - 详情请查看 [LICENSE](LICENSE) 文件
+
+---
+
+**开发者**：Starsky-moreimmortal  
+**最后更新**：2025年3月15日
+
