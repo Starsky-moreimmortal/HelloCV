@@ -1,7 +1,6 @@
 # 首先说明，本人是在边做边学，学习笔记已详细整理至“Starsky语雀链接”，每周更新，已设为公开访问！
-```
+
 https://github.com/Starsky-moreimmortal/HelloCV/blob/main/Starsky%E8%AF%AD%E9%9B%80%E9%93%BE%E6%8E%A5.txt
-```
 
 # HelloCV
 
