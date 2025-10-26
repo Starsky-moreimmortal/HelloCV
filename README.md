@@ -221,20 +221,20 @@ HelloCV/
 
 ---
 
-TrafficLight 交通灯检测项目
+# TrafficLight 交通灯检测项目
 
-项目概述
+# 项目概述
 
 这是一个基于 ​OpenCV​ 和 ​C++​​ 的交通灯颜色检测系统，能够从视频流中实时检测并识别交通灯的红绿状态。项目涵盖了从环境配置、算法开发到实际应用的完整计算机视觉开发流程。
 
-核心功能：
+# 核心功能：
 视频处理​：支持多种视频格式输入（AVI、MP4等）
 颜色识别​：准确检测红灯和绿灯状态
 实时处理​：逐帧分析视频流，实时输出检测结果
 多后端兼容​：支持 FFmpeg、V4L 等多种视频后端
 ​跨平台​：在 WSL/Ubuntu 和 Windows 环境下均可运行
 
-项目结构：
+# 项目结构：
 TrafficLight/
 ├── src/
 │   ├── main.cpp              # 主程序 - 交通灯检测核心逻辑
@@ -249,13 +249,13 @@ TrafficLight/
 ├── CMakeLists.txt            # 项目构建配置
 └── README.md                 # 项目说明文档
 
-环境要求
+# 环境要求
 ​Ubuntu/WSL 环境​
 ​OpenCV 4.5.5+​​（需包含视频支持）
 ​FFmpeg​（用于视频处理）
 ​GCC/G++​​（C++编译器）
 
-使用指南：
+# 使用指南：
 将交通灯视频文件放置在项目目录中：
 C:/Users/用户名/Desktop/OpenCV_Test/
 
@@ -273,7 +273,7 @@ ffmpeg -i "/mnt/c/Users/tysqw/Desktop/OpenCV_Test/TrafficLight.mp4" \
 # 验证生成结果
 ls -la /mnt/c/Users/tysqw/Desktop/OpenCV_Test/frames/ | head -10
 
-项目编译：
+# 项目编译：
 ```bash
 cd ~/cv_ws/src/HelloCV/OpenCV_Test/
 mkdir -p build && cd build
@@ -281,14 +281,14 @@ cmake ..
 make
 ```
 
-配置图片序列路径：
+# 配置图片序列路径：
 string image_pattern = "/mnt/c/Users/tysqw/Desktop/OpenCV_Test/frames/frame_%04d.jpg";
 （注意：WSL不能直接读取Windows的文件，需要改为mnt/c的形式！！！）
 
-运行：
+# 运行：
 ./OpenCV_test
 
-main.cpp:
+# main.cpp:
 ```cpp
 #include <iostream>
 #include <opencv2/opencv.hpp>
@@ -356,7 +356,7 @@ int main() {
 }
 ```
 
-结果：
+# 结果：
 ```
 1.图片流形式
 2.左上角颜色状态文字显示
